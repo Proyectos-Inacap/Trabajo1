@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package ejercicio3;
 
 import java.util.Scanner;
@@ -11,11 +12,13 @@ import java.util.Scanner;
  *
  * @author christian_aqueveque
  */
+
 public class Ejercicio3 {
 
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         
         Scanner read = new Scanner(System.in); //Creación del objeto Scanner.
@@ -54,9 +57,9 @@ public class Ejercicio3 {
             
                 read.nextLine(); //Vaciar el objeto Scanner.
             
-            }
+            } //End Try
             
-        }
+        } //End While
         
         for (int i = 1; i <= maxNotas; i++) { /* Bucle para ingreso de notas según
         cantidad solicitada por usuario. */
