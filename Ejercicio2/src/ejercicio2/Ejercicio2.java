@@ -1,4 +1,6 @@
 //CONJUNTO DE NUMEROS ENTEROS Y DETERMINA EL MAYOR NEGATIVO Y EL MENOR POSITIVO
+
+
 package ejercicio2;
 
 import java.util.Scanner;

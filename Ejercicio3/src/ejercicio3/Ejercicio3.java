@@ -1,3 +1,6 @@
+//Ejercicio 3: Conjunto de notas. Con mayor, menor y promedio.
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

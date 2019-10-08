@@ -1,3 +1,6 @@
+//Ejercicio 6: Intervalo de números, encontrar números perfectos y determinar cantidad.
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

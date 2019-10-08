@@ -1,3 +1,5 @@
+//Ejercicio 5: Lanzamiento de dado.
+
 
 package ejercicio5;
 
