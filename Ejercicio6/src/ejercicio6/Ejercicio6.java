@@ -70,7 +70,7 @@ public class Ejercicio6 {
                 
             }//End For
             
-            if (sum == numFirst) { //Comparación de suma de divisores con inicio intervalo.
+            if (sum == numFirst && sum != 0) { //Comparación de suma de divisores con inicio intervalo.
                     
                     System.out.println("El número " + numFirst + " es perfecto.");
                     //Muestra al usuario número perfecto.
