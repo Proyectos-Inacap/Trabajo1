@@ -80,6 +80,43 @@ public class Ejercicio3 {
             
                     nota = read.nextDouble(); //Almacenar el valor ingresado en nota.
                     
+                    if(nota >= 1 && nota <= 7){ /* Validación de valor almacenado en nota
+                    cumpla con requisitos para ser nota. */
+                
+                        if (i == 1) { //Verificar si es el primer término ingresado.
+
+                        notaMin = nota; //Almacenar valor ingresado en nota mínima.
+
+                        notaMax = nota; //Almacenar valor ingresado en nota máxima.
+
+                        promedio = nota; //Almacenar valor ingresado en promedio.
+
+                        }else if (nota < notaMin) { /*Si no es el primero verifica si la
+                        menor nota ingresada. */
+
+                        notaMin = nota; //Almacenar nota mínima.
+
+                        promedio = promedio + nota; //Sumar promedio
+
+                        }else if (nota > notaMax) { /* si no es la menor nota ingresada
+                        verifica si es la mayor. */
+
+                        notaMax = nota; //Almacenar nota mínima.
+
+                        promedio = promedio + nota; //Sumar promedio.
+
+                        } //End If
+                
+                    }else{ //Si no cumple requisitos para ser nota.
+                
+                        System.out.println("El valor ingresado no es una nota válida.");
+                        //Muestra al usuario que el valor no cumple los requisitos.
+                
+                        i = i - 1; //Decrementa la variable del bucle.
+                
+                    } //End If
+            
+                    
                     if (nota != 0) { //Validación para apagar interruptor.
                         
                         switchN = false; //Apagar interruptor.
@@ -97,43 +134,9 @@ public class Ejercicio3 {
                 
             } //End While
             
-            if(nota >= 1 && nota <= 7){ /* Validación de valor almacenado en nota
-            cumpla con requisitos para ser nota. */
-                
-                if (i == 1) { //Verificar si es el primer término ingresado.
-                    
-                    notaMin = nota; //Almacenar valor ingresado en nota mínima.
-                    
-                    notaMax = nota; //Almacenar valor ingresado en nota máxima.
-                    
-                    promedio = nota; //Almacenar valor ingresado en promedio.
-                    
-                }else if (nota < notaMin) { /*Si no es el primero verifica si la
-                menor nota ingresada. */
-                    
-                    notaMin = nota; //Almacenar nota mínima.
-                    
-                    promedio = promedio + nota; //Sumar promedio
-                    
-                }else if (nota > notaMax) { /* si no es la menor nota ingresada
-                verifica si es la mayor. */
-                    
-                    notaMax = nota; //Almacenar nota mínima.
-                    
-                    promedio = promedio + nota; //Sumar promedio.
-                    
-                } //End If
-                
-            }else{ //Si no cumple requisitos para ser nota.
-                
-                System.out.println("El valor ingresado no es una nota válida.");
-                //Muestra al usuario que el valor no cumple los requisitos.
-                
-                i = i - 1; //Decrementa la variable del bucle.
-                
-            } //End If
-            
         } //End For
+        
+        System.out.println(promedio);
         
         promedio = promedio / maxNotas; //Divide el promedio por la cantidad de notas.
         
@@ -149,6 +152,6 @@ public class Ejercicio3 {
         System.out.printf("%.1f%n" , promedio); /* Muestra al usuario el promedio
         con el formato requerido. */
         
-    }
+    }//End Main
     
-}
+}//End Class
