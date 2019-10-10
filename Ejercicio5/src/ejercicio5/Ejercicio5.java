@@ -13,7 +13,7 @@ public class Ejercicio5 {
        int cant = entrada.nextInt(); //lee el numero ingresado
        int cont=1;
        while(cont<=cant){ //hace que el ejercicio se repita las veces que se ingreso
-            int val =(int) (Math.random()*5)+1; //valida
+            int val =(int) (Math.random()*6)+1; //valida
             System.out.println("El numero del tiro "+cont+" es: "+val);
            cont++;
        }
